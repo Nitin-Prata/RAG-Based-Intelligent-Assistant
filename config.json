@@ -1,0 +1,22 @@
+{
+  "dataset_name": "ag_news",
+  "dataset_split": "train[:2000]",
+  "text_fields": ["text"],
+  "title_field": "title",
+  "chunk_size_tokens": 500,
+  "chunk_overlap_tokens": 50,
+  "bm25_weight": 0.5,
+  "dense_weight": 0.5,
+  "top_k": 5,
+  "embedding_model_name": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "generation_model_name": "google/flan-t5-base",
+  "max_new_tokens": 128,
+  "temperature": 0.0,
+  "corpus_chunks_path": "data/corpus_chunks.jsonl",
+  "faiss_index_path": "data/faiss.index",
+  "embeddings_path": "data/embeddings.npy",
+  "bm25_index_path": "data/bm25.pkl",
+  "eval_questions_path": "data/eval_qa.jsonl",
+  "outputs_dir": "outputs",
+  "seed": 42
+}
